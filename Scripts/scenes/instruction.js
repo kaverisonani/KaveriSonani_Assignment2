@@ -28,13 +28,15 @@ var scenes;
         // private methods
         // public methods
         Instruction.prototype.Start = function () {
-            this.line1 = new objects.Label("Don't touch the enemies other wise \n \n your bird life is reduced", "30px", "Consolas", "#00000F", 320, 100, true);
-            this.line2 = new objects.Label("Move Your Character with Mouse to eat grass \n \n that will improve your score", "30px", "Consolas", "#000000", 380, 200, true);
-            this.line3 = new objects.Label("You have 5 Lives", "50px", "Consolas", "#000000", 320, 300, true);
+            this._ocean = new objects.Ocean();
+            this.line1 = new objects.Label("Don't touch the enemies other wise \n \n your bird life is reduced", "30px", "Consolas", "#FFFF00", 320, 100, true);
+            this.line2 = new objects.Label("Move Your Character with Mouse to eat grass \n \n that will improve your score", "30px", "Consolas", "#FFFF00", 380, 200, true);
+            this.line3 = new objects.Label("You have 5 Lives", "50px", "Consolas", "#FFFF00", 320, 300, true);
             this._startButton = new objects.Button("StartButton", 320, 400, true);
             this.Main();
         };
         Instruction.prototype.Update = function () {
+            this._ocean.Update();
         };
         Instruction.prototype.Reset = function () {
         };

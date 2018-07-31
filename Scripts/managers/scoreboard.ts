@@ -103,7 +103,7 @@ module managers {
         public Start() {
             this._livesLabel = new objects.Label("Lives: 99", "30px", "Dock51", "#FFFF00", 20, 20, false);
             this._scoreLabel = new objects.Label("Score: 99999", "30px", "Dock51", "#FFFF00", 390, 20, false); 
-            this._highScoreLabel = new objects.Label("High Score: 999999", "60px", "Dock51", "#FFFF00", 350, 150, true);
+            this._highScoreLabel = new objects.Label("High Score: 999999", "60px", "Dock51", "#FFFF00", 400, 150, true);
             
             this.HighScore = 0;
             this.Reset();

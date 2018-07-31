@@ -30,7 +30,9 @@ module scenes {
         // public methods
         public Start():void {
 
-            this._welcomeLabel = new objects.Label("Welcome!", "60px", "Consolas", "#000000", 420, 240, true);
+            this._ocean = new objects.Ocean();
+
+            this._welcomeLabel = new objects.Label("Welcome!", "60px", "Consolas", "#FFFF00", 420, 240, true);
             this._startButton = new objects.Button("StartButton", 520, 360, true);
             this._instructionButton = new objects.Button("NextButton", 300, 360, true);
 
@@ -38,7 +40,8 @@ module scenes {
         }
 
         public Update():void {
-
+            
+            this._ocean.Update();
         }
 
         public Reset():void {
@@ -50,11 +53,17 @@ module scenes {
         }
 
         public Main():void {
+           
             console.log("Started - START SCENE");
+            this.addChild(this._ocean);
             this.addChild(this._welcomeLabel);
             this.addChild(this._startButton);
             this.addChild(this._instructionButton);
-            this.addChild(this._ocean);
+
+        
+            
+
+            
 
             this._startButton.on("click", function(){
                 managers.Game.CurrentState = config.Scene.PLAY;

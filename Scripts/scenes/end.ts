@@ -30,14 +30,16 @@ module scenes {
         // public methods
         public Start():void {
 
-            this._endLabel = new objects.Label("Game Over!", "60px", "Consolas", "#000000", 320, 240, true);
+            this._ocean = new objects.Ocean();
+
+            this._endLabel = new objects.Label("Game Over!", "60px", "Consolas", "#FFFF00", 320, 240, true);
             this._backButton = new objects.Button("BackButton", 320, 360, true);
 
             this.Main();
         }
 
         public Update():void {
-
+            this._ocean.Update();
         }
 
         public Reset():void {
