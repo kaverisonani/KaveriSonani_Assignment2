@@ -1,3 +1,10 @@
+/*
+ Author’s name: Kaveri Sonani,
+Student Number: 300985891,
+Last Modified by: July 30, 2018,
+Program description: 2D Scrolling Game,
+ 
+*/
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||

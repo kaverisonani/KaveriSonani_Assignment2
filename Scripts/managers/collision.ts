@@ -1,5 +1,20 @@
+/* 
+ Author’s name: Kaveri Sonani, 
+Student Number: 300985891, 
+Last Modified by: July 30, 2018, 
+Program description: 2D Scrolling Game,
+ 
+*/
+
+
+
+
+
 module managers {
     export class Collision {
+       
+       
+       
         public static check(object1:objects.GameObject, object2:objects.GameObject) {
             let P1:math.Vec2 = new math.Vec2(object1.x, object1.y);
             let P2:math.Vec2 = new math.Vec2(object2.x, object2.y);

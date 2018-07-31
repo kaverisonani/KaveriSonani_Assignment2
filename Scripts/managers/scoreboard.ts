@@ -1,3 +1,17 @@
+
+
+
+/* 
+ Author’s name: Kaveri Sonani, 
+Student Number: 300985891, 
+Last Modified by: July 30, 2018, 
+Program description: 2D Scrolling Game,
+ 
+*/
+
+
+
+
 module managers {
     export class ScoreBoard {
         // private member variables
